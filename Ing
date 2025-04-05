@@ -1,0 +1,205 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "modifier",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Crazy Stair override",
+   LoadingSubtitle = "by Kitmme",
+   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("Fake Chameleon", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Perks")
+local Button = Tab:CreateButton({
+   Name = "Muggle",
+   Callback = function()
+   local args = {
+    [1] = Vector3.new(22.990541458129883, 1.4236958026885986, -0.7552045583724976),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("MuggleMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hacker",
+   Callback = function()
+   local args = {
+    [1] = Vector3.new(19.888961791992188, 2.087164878845215, 10.96336555480957),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("HackerMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Wicked",
+   Callback = function()
+   local args = {
+    [1] = Vector3.new(16.238529205322266, 3.0013949871063232, 15.301243782043457),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("WickedMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Keeper",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(8.545225143432617, 1.6701886653900146, 22.37253761291504),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("KeeperMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Germlin",
+   Callback = function()
+   local args = {
+    [1] = Vector3.new(1.0954681634902954, 0.8676791787147522, 22.10981559753418),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("GremlinMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Joker",
+   Callback = function()
+  local args = {
+    [1] = Vector3.new(-7.9422197341918945, 2.699071168899536, 21.46512222290039),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("JokerMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Drifter",
+   Callback = function()
+   local args = {
+    [1] = Vector3.new(-15.220531463623047, 2.770315170288086, 16.146305084228516),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("DrifterMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Splicer",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(-21.224781036376953, 0.6127505898475647, 8.370810508728027),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("SplicerMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Patron",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(-22.546178817749023, 1.1687264442443848, 0.21214255690574646),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("PatronMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Archon",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(-20.998249053955078, 2.5505547523498535, -8.608211517333984),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("ArchonMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Thief",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(-8.892236709594727, 1.1435730457305908, -21.667686462402344),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("ThiefMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Reaver",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(-0.11545403301715851, 1.4077370166778564, -22.873727798461914),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("ReaverMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Heretic",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(8.79110050201416, 1.4077351093292236, -20.833574295043945),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("HereticMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Necromancer",
+   Callback = function()
+local args = {
+    [1] = Vector3.new(15.876991271972656, 2.5505518913269043, -15.795289993286133),
+    [2] = workspace:WaitForChild("Morphs"):WaitForChild("NecromancerMorph")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("CharacterLanded"):FireServer(unpack(args))
+
+   end,
+})
